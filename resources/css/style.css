@@ -1,0 +1,175 @@
+html {
+  font-size: 16px;
+  font-family: calibri;
+
+}
+header {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  border: 2px solid black;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+}
+.logo-container span {
+  font-size: 1.5rem;
+}
+
+#desktop {
+  display: block;
+  padding: 1rem 1.5rem 1rem auto;
+  font-size: 1.25rem;
+}
+a {
+  color: black;
+  padding: 1rem 1rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.7rem;
+}
+h4 {
+  font-size: 2rem;
+  }
+h5 {
+  font-size: 1.5rem;
+}
+.banner-content-container {
+  display: flex;
+  border: 1px solid red;
+  width: 100%;
+  background-color: silver;
+    }
+
+.banner {
+  display: flex;
+  border: 2px solid yellow;
+  width: 100%;
+}
+.banner-text {
+  padding-left: 0 0 0 2.5rem;
+  box-sizing: border-box;
+  align-content: center;
+}
+
+.learn-content-container {
+  display: flex;
+  border: 1px solid red;
+}
+.learn {
+  display: flex;
+  border: 2px solid yellow;
+}
+.left-column {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 2.6rem 3.6rem 2rem 1.5rem;
+  }
+.orientation, .campus, .guest {
+    border: 2px solid gray;
+    display: flex;
+      }
+.text-container {
+  flex-direction: row;
+  border: 1px solid red;
+}
+.learn-image {
+  border: 1px solid blue;
+  padding: 2.5rem 2.5rem;
+  }
+
+.left-column img{
+  width: 100%;
+}
+
+.right-column {
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height:
+}
+.banner .right-column {
+  background-color: silver;
+}
+.Fisma {
+  background-color: silver;
+}
+.banner-button {
+  height: 1.5rem;
+  background-color: black;
+  color: white;
+}
+.content-button {
+  color: lightblue;
+}
+.guest {
+  background-color: silver;
+}
+.content-container {
+  border: 2px solid purple;
+  display: flex;
+  width: 100%;
+}
+.start-learning-content-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: silver;
+  width: 97%;
+  box-sizing: border-box;;
+  padding: 2rem;
+  margin-left: 2rem;
+}
+.course-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: space-around;
+  padding: 2rem 2rem;
+  box-sizing: border-box;
+
+}
+ .courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.start-learning h1{
+  text-align: center;
+  padding: 4rem auto;
+}
+
+.left-column source {
+  width: 100%
+}
+.thesis-content-container {
+  width: 100%;
+  border: 2px solid pink;
+}
+.thesis-title h1 {
+  text-align: center;
+  padding: 4rem auto;
+}
+ footer {
+   display: flex;
+   justify-content: space-between;
+   padding: 2px;
+ }
+ .footer2 {
+   font-size: 1.5rem;
+ }
