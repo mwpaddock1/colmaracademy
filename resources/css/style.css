@@ -39,7 +39,7 @@ h4 {
   font-size: 2rem;
   }
 h5 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .banner-content-container {
   display: flex;
@@ -54,11 +54,22 @@ h5 {
   width: 100%;
 }
 .banner-text {
-  padding-left: 0 0 0 2.5rem;
-  box-sizing: border-box;
-  align-content: center;
-}
 
+  align-content: left;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5rem 7rem;
+}
+.banner-button {
+    width: 66%;
+    background-color: black;
+    text-align: center;
+    padding: .66rem 0;
+    font: 2rem;
+    height: 7rem;
+    color: white;
+}
 .learn-content-container {
   display: flex;
   border: 1px solid red;
@@ -101,13 +112,21 @@ h5 {
 .banner .right-column {
   background-color: silver;
 }
-.Fisma {
-  background-color: silver;
+.video {
+  display: flex;
+  flex-direction: column;
 }
-.banner-button {
-  height: 1.5rem;
-  background-color: black;
-  color: white;
+.Fisma {
+  display: flex;
+  width 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 5rem 5rem;
+  justify-content: space-between;
+}
+.thesis-topright-image, .Fisma {
+  background-color: silver;
+  padding: 1rem 1rem;
 }
 .content-button {
   color: lightblue;
@@ -132,15 +151,18 @@ h5 {
 }
 .course-container {
   width: 30%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: white;
   justify-content: space-around;
   padding: 2rem 2rem;
   box-sizing: border-box;
-
+  border: 2px solid black;
 }
+ .course-container img {
+   height: 13.75rem;
+ }
  .courses {
   display: flex;
   flex-wrap: wrap;
@@ -148,10 +170,29 @@ h5 {
   margin: 0 auto;
   box-sizing: border-box;
 }
+.course-text {
+  background-color: white;
+  text-align: left;
+  height: 15rem;
+}
 
 .start-learning h1{
   text-align: center;
   padding: 4rem auto;
+}
+
+.course-text h2 {
+  font-size: 1.9rem;
+  padding-left: 1rem;
+
+}
+.course-text p {
+  font-size: 1.4rem;
+  padding-left: 1rem;
+}
+.course-desc {
+  font-size: 1.1rem;
+  padding-left: 1rem;
 }
 
 .left-column source {
@@ -160,10 +201,24 @@ h5 {
 .thesis-content-container {
   width: 100%;
   border: 2px solid pink;
+  display: flex;
+  flex-direction: row;
+}
+.thesis-right-topic {
+  display: flex;
+  width: 100%;
+
+}
+.thesis-topright-image {
+background-color: silver;
 }
 .thesis-title h1 {
   text-align: center;
-  padding: 4rem auto;
+  padding: 2rem auto;
+}
+.thesis-right-image{
+  padding: 1rem 1rem;
+  box-sizing: border-box;
 }
  footer {
    display: flex;
