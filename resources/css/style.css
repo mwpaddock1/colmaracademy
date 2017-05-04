@@ -1,7 +1,9 @@
 html {
   font-size: 16px;
   font-family: calibri;
-
+}
+#phone {
+  display: none;
 }
 header {
   height: 4rem;
@@ -54,12 +56,13 @@ h5 {
   width: 100%;
 }
 .banner-text {
-
+  display: flex;
   align-content: left;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   padding: 5rem 7rem;
+  box-sizing: border-box;
 }
 .banner-button {
     width: 66%;
@@ -90,8 +93,10 @@ h5 {
     display: flex;
       }
 .text-container {
-  flex-direction: row;
+  box-sizing: border-box;
+  flex-wrap: wrap;
   border: 1px solid red;
+  width: 60%;
 }
 .learn-image {
   border: 1px solid blue;
@@ -106,7 +111,7 @@ h5 {
   border: 2px solid green;
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 40%;
   height:
 }
 .banner .right-column {
@@ -119,14 +124,17 @@ h5 {
 .Fisma {
   display: flex;
   width 100%;
-  align-items: flex-start;
   flex-direction: column;
   padding: 5rem 5rem;
-  justify-content: space-between;
+
 }
 .thesis-topright-image, .Fisma {
   background-color: silver;
   padding: 1rem 1rem;
+}
+.thesis-topright-topic {
+  width: 100%;
+  background-color: silver;
 }
 .content-button {
   color: lightblue;
@@ -194,20 +202,28 @@ h5 {
   font-size: 1.1rem;
   padding-left: 1rem;
 }
-
+.video controls {
+  padding-left: 2rem;
+  height: 100%;
+  margin-top: 0;
+}
 .left-column source {
-  width: 100%
+  width: 100%;
+
 }
 .thesis-content-container {
   width: 100%;
   border: 2px solid pink;
   display: flex;
   flex-direction: row;
+  height: 100%;
+}
+.column-left-text{
+  Padding-left: 2rem;
 }
 .thesis-right-topic {
   display: flex;
   width: 100%;
-
 }
 .thesis-topright-image {
 background-color: silver;
@@ -227,4 +243,21 @@ background-color: silver;
  }
  .footer2 {
    font-size: 1.5rem;
- }
+
+   @media only screen and (max-width: 470px){
+      body {
+        display: block;
+      }
+      #phone {
+        display: block;
+      }
+
+      nav #desktop{
+        display: none;
+        }
+
+    .banner .left-column img {
+      display: none;
+    }
+
+  }
