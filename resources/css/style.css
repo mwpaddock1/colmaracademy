@@ -2,10 +2,8 @@ html {
   font-size: 16px;
   font-family: calibri;
 }
-#phone {
-  display: none;
-}
-header {
+
+.header-desktop {
   height: 4rem;
   width: 100%;
   display: flex;
@@ -14,6 +12,13 @@ header {
   border: 2px solid black;
   align-items: center;
 }
+
+.header-phone {
+  display: none;
+}
+.start-learning-mobile {
+  display: none;
+}
 .logo-container {
   display: flex;
 }
@@ -21,11 +26,6 @@ header {
   font-size: 1.5rem;
 }
 
-#desktop {
-  display: block;
-  padding: 1rem 1.5rem 1rem auto;
-  font-size: 1.25rem;
-}
 a {
   color: black;
   padding: 1rem 1rem;
@@ -218,8 +218,10 @@ h5 {
   flex-direction: row;
   height: 100%;
 }
+
 .column-left-text{
   Padding-left: 2rem;
+  height: 20%;
 }
 .thesis-right-topic {
   display: flex;
@@ -239,25 +241,82 @@ background-color: silver;
  footer {
    display: flex;
    justify-content: space-between;
-   padding: 2px;
+   padding: 2rem;
  }
  .footer2 {
    font-size: 1.5rem;
+ }
 
-   @media only screen and (max-width: 470px){
+@media only screen and (max-width: 480px){
       body {
         display: block;
       }
-      #phone {
-        display: block;
-      }
 
-      nav #desktop{
-        display: none;
-        }
+     .header-desktop {
+       display: none;
+       }
 
-    .banner .left-column img {
+ .header-phone {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    border: 2px solid black;
+    align-items: stretch;
+   }
+
+  .banner .left-column {
+    height: 11.25rem;
+  }
+  .banner-content-container {
+    flex-direction: column;
+  }
+  .banner .left-column img {
       display: none;
     }
+  .learn .left-column img {
+  display: none;
+}
+.learn, .left-column h1, h4, h5 {
+  display: none;
+}
+.column-left-text h3 {
+  display: none;
+}
+.video {
+  margin-bottom: 0;
+  align-content: flex-end;
+}
+ .start-learning {
+   display: none;
+ }
+ .start-learning-mobile {
+   display: block;
+ }
+.video {
+  object-fit: contain;
+  display: flex;
+  flex-direction: row;
+
+}
+.thesis-content-container .right-column {
+  display: none;
+}
+.thesis-content-container .left-column {
+  width: 100%;
+  margin-bottom: 0;
+  flex-direction: row;
+}
+footer {
+  padding: 2.5rem auto 1rem 3rem;
+}
+.footer2 {
+  display: none;
+}
+.footer1 h5 {
+  font-size: 1rem;
+  font-weight: normal;
+  }
 
   }
