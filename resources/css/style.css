@@ -91,7 +91,7 @@ h5 {
 .orientation, .campus, .guest {
     border: 2px solid gray;
     display: flex;
-      }
+          }
 .text-container {
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -278,11 +278,17 @@ background-color: silver;
   .learn .left-column img {
   display: none;
 }
-.learn, .left-column h1, h4, h5 {
+.learn-text {
   display: none;
-}
+  }
 .column-left-text h3 {
   display: none;
+}
+.learn .left-column {
+  display: none;
+}
+.orientation, campus, guest {
+  flex-direction: column;
 }
 .video {
   margin-bottom: 0;
@@ -294,6 +300,25 @@ background-color: silver;
  .start-learning-mobile {
    display: block;
  }
+ .start-learning-content-container {
+   background-color: white;
+ }
+ .start-learning-mobile h1 {
+   font-size: 3rem;
+ }
+ .course-container {
+   background-color: silver;
+   display: flex;
+   width: 100%;
+   height: 3rem;
+   margin: .5rem;
+   align-content: center;
+ }
+ .courses {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+ }
 .video {
   object-fit: contain;
   display: flex;
@@ -302,21 +327,17 @@ background-color: silver;
 }
 .thesis-content-container .right-column {
   display: none;
-}
+  }
 .thesis-content-container .left-column {
   width: 100%;
   margin-bottom: 0;
   flex-direction: row;
-}
-footer {
-  padding: 2.5rem auto 1rem 3rem;
-}
-.footer2 {
-  display: none;
-}
-.footer1 h5 {
-  font-size: 1rem;
-  font-weight: normal;
   }
-
+  .footer2 {
+    display: none;
   }
+  .footer1 h5{
+    font-size: 1rem;
+    font-weight: normal;
+    }
+}
