@@ -45,7 +45,7 @@ h5 {
 .banner-content-container {
   display: flex;
   width: 100%;
-  background-color: silver;
+  background-color: gainsboro;
   }
 
 .banner-text {
@@ -53,24 +53,26 @@ h5 {
   align-content: left;
   flex-wrap: wrap;
   width: 100%;
-  padding: 5em;
+  padding: 5rem;
   box-sizing: border-box;
-  background-color: silver;
+  background-color: gainsboro;
   height: 100%;
   flex-direction: column;
-}
-.banner-button {
-    width: 66%;
-    background-color: gray;
-    text-align: center;
-    padding: .66rem 0;
-    font: 2rem;
-    height: 7rem;
-    color: white;
 }
 .learn-content-container {
   display: flex;
   }
+.banner-button {
+  width: 66%;
+  background-color: #262626;
+  text-align: center;
+  padding: .66rem 0;
+  border-radius: 1rem;
+  font: 2rem;
+  height: 7rem;
+  color: white;
+  }
+
 .learn {
   display: flex;
   }
@@ -81,12 +83,11 @@ h5 {
   display: flex;
   flex-direction: column;
   width: 60%;
-  /*margin: 2.6rem 3.6rem 2rem 1.5rem;*/
-  border: 2px solid green;
   }
 .orientation, .campus, .guest {
     display: flex;
     }
+
 .text-container {
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -103,21 +104,19 @@ h5 {
 }
 
 .right-column {
-  border-left: 1px solid silver;
+  border-left: 1px solid gainsboro;
   display: flex;
   flex-direction: column;
   width: 40%;
-  border: 2px solid blue;
 }
 .banner .right-column {
-  background-color: silver;
+  background-color: gainsboro;
   width: 100%;
 }
 video {
   display: flex;
   flex-direction: column;
   height: calc(1080 / 1920 * 100%);
-  /*width: calc(100% * (1920 / 1080));*/
   width: 100%;
 }
 .Fisma {
@@ -128,20 +127,23 @@ video {
 
 }
 .thesis-topright-image, .Fisma {
-  background-color: silver;
   padding: 1rem 1rem;
 }
-.thesis-topright-topic {
-  width: 100%;
-  background-color: silver;
-}
+
 .content-button {
-  color: lightblue;
+  color: darkblue;
 }
-.orientation  {
-  hover:
-  color: silver;
+.orientation:hover {
+  background-color: steelblue;
 }
+.campus:hover {
+  background-color: steelblue;
+}
+.guest:hover {
+  background-color: steelblue;
+}
+
+
 .content-container {
   display: flex;
   width: 100%;
@@ -150,7 +152,7 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: silver;
+  background-color: gainsboro;
   width: 100%;
   box-sizing: border-box;
   padding: 2rem;
@@ -166,7 +168,7 @@ video {
   box-sizing: border-box;
 }
 .course-container:hover{
-  color: blue;
+  background-color: steelblue;
 }
  .course-container img {
    height: 13.75rem;
@@ -214,7 +216,6 @@ video {
 .thesis-content-container {
   align-items: flex-start;
   width: 100%;
-  border: 2px solid pink;
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -228,9 +229,11 @@ video {
   display: flex;
   width: 100%;
 }
+.thesis-topright-topic:hover {
+  background-color: gainsboro;
+}
 .thesis-topright-image {
-background-color: silver;
-padding: 2rem;
+  padding: 2rem;
 }
 .thesis-title h1 {
   text-align: center;
@@ -242,6 +245,9 @@ padding: 2rem;
 .thesis-right-topic {
   display: flex;
     width: 100%;
+}
+.thesis-right-topic:hover {
+  background-color: gainsboro;
 }
 .thesis-right-image{
   padding: 2rem;
@@ -277,23 +283,28 @@ padding: 2rem;
   display: flex;
   flex-direction: column;
 }
+.banner-button {
+  /*height: 5rem;*/
+  width: 20rem;
+  text-align: center;
+  background-color: dimgray;
+}
+
   .banner-content-container .left-column {
     height: 11.25rem;
-    background-color: gray;
+    background-color: dimgray;
     flex-direction: column;
-    background-color: gray;
     width: 100%;
   }
-  .banner-text {
-    justify-content: center;
-    }
+
   .banner right-column {
     width: 100;
     padding: 1rem;
   }
+
   .banner-content-container .left-column img {
       display: none;
-    }
+  }
 
   .learn .left-column img {
   display: none;
@@ -320,10 +331,6 @@ padding: 2rem;
   flex-direction: column;
   width: 100%;
 }
-/*.video {
-  margin-bottom: 0;
-  align-content: flex-end;
-}*/
  .start-learning {
    display: none;
  }
@@ -337,7 +344,7 @@ padding: 2rem;
    font-size: 3rem;
  }
  .course-container {
-   background-color: silver;
+   background-color: gainsboro;
    display: flex;
    width: 100%;
    height: 3rem;
@@ -352,22 +359,16 @@ padding: 2rem;
  .text-container {
    padding: 2rem 2rem;
  }
-video {
-    /*max-width: 100%;*/
-  /*//  height: calc(1080px * 0.2);
-    width: calc(1920px * 0.2);*/
 
-}
 .thesis-content-container .right-column {
   display: none;
   }
-
-  .column-left-text { display: none; }
+  .column-left-text {
+    display: none;
+   }
 .thesis-content-container .left-column {
   width: 100%;
-  /*flex-shrink: 1;*/
   margin-bottom: 0;
-  /*flex-direction: row;*/
   align-items: flex-start;
   }
   .footer2 {
